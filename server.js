@@ -18,7 +18,7 @@ const bodyParser = require('body-parser');
 // zugewiesen an die Konstante namens PORT. Das einfache Gleichheitszeichen lässt sich also übersetzen
 // mit "... wird zugewiesen an ..."
 
-const PORT = 3000;
+const PORT = 4000;
 
 // Der Wert '0.0.0.0' wird zugewiesen an eine Konstante namens HOST 
 const HOST = '0.0.0.0';
@@ -69,7 +69,7 @@ app.get('/postfach', (req, res) => {
 
 app.get('/kreditBeantragen', (req, res) => {
 	res.render('kreditBeantragen.ejs',{});
-});
+}); 
 
 app.get('/ueberweisungAusfuehren', (req, res) => {
 	res.render('ueberweisungAusfuehren.ejs',{});
